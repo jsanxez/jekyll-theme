@@ -1,10 +1,8 @@
 # fragmental
 
-Welcome to your new Jekyll theme! In this directory, you'll find the files you need to be able to package up your theme into a gem. Put your layouts in `_layouts`, your includes in `_includes`, your sass files in `_sass` and any other assets in `assets`.
+Clean blog theme.
 
-To experiment with this code, add some sample content and run `bundle exec jekyll serve` – this directory is setup just like a Jekyll site!
-
-TODO: Delete this and the text above, and describe your gem
+> Man at work!
 
 
 ## Installation
@@ -31,7 +29,17 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here. Describe your available layouts, includes, sass and/or assets.
+Try it in live mode:
+
+```
+bundle exec jekyll serve --livereload
+```
+
+Fast option (for any reason there are still some performance issues):
+
+```
+bundle exec jekyll serve --incremental
+```
 
 ## Contributing
 
