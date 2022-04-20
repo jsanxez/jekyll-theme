@@ -1,0 +1,16 @@
+<header id="main-header" class="dflex-row nowrap flex-justify-between">
+    <a href="{{ "/" | relative_url }}" id="brand">
+        <img src="{{ "assets/images/resources/logo.svg" | relative_url }}" alt="logo" class="logo">
+        <span id="brand__name">{{ site.title }}</span>
+    </a>
+
+    <!-- mobile menu -->
+    <input type="checkbox" class="toggler">
+    <div id="hamburger">
+        <div class="line"></div>
+    </div>
+    <!-- END mb-menu -->
+
+    {% include navigation.html %}
+</header>
+{% include tags_cloud.html %}

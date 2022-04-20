@@ -1,0 +1,51 @@
+---
+layout: default
+---
+{{ content }}
+
+<main class="cards-container dflex-row wrap flex-align-content-start">
+{% for post in site.posts %}
+  <article class="card flex-grow-1 rounded-1 bshadow-1">
+      <div class="card-header relative">
+          <img src="/assets/images/{{ post.image }}" class="card__thumb" onerror="this.onerror=null; this.remove();">
+          <a href="#" class="meta-info absolute left ml-1">
+              <!-- <img src="{{ "/assets/images/resources/user.svg" | relative_url }}"> -->
+              <span>{{ post.author }}</span>
+          </a>
+          <a href="#" class="meta-info absolute right mr-1">
+              <!-- <img src="{{ "/assets/images/resources/clock.svg" | relative_url }}"> -->
+              {% assign dateStart = post.date | date: '%s' %}
+              {% assign nowTimestamp = 'now' | date: '%s' %}
+              {% assign diffSeconds = nowTimestamp | minus: dateStart %}
+              {% assign diffDays = diffSeconds | divided_by: 3600 | divided_by: 24 %}
+
+              {% if diffDays > 1 %}
+                {% assign agoText = "days ago"%}
+              {% else %}
+                {% assign agoText = "day ago"%}
+              {% endif %}
+              <span>{{ diffDays }} {{ agoText }}</span>
+          </a>
+      </div>
+      <div class="card-body flex-grow-1">
+          <a href="{{ post.url }}"><h2 class="card__title">{{ post.title }}</h2></a>
+          <p class="card__description mt-1">{{ post.excerpt | truncate: 100 }}</p>
+      </div>
+      <div class="card-footer dflex-row nowrap flex-justify-between">
+          <div class="meta-info">
+              <!-- <img src="{{ "/assets/images/resources/tags.svg" | relative_url }}"> -->
+                {% for tag in post.tags %}
+                <a href="#">{{ tag }}</a>{% if tag != post.tags.last %}, {% endif %}
+                {% endfor %}
+          </div>
+          <a href="#" class="meta-info">
+              <!-- <img src="{{ "/assets/images/resources/comment.svg" | relative_url }}"> -->
+              <span href="#">13</span>
+          </a>
+      </div>
+  </article>
+{% endfor %}
+</main>
+
+{% include pagination.html %}
+{% include sidebar.html %}

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="38"
+   height="38"
+   viewBox="0 0 38 38"
+   version="1.1"
+   id="svg5"
+   sodipodi:docname="arrow.svg"
+   inkscape:version="1.0.2 (e86c870879, 2021-01-15, custom)">
+  <metadata
+     id="metadata11">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs9" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1366"
+     inkscape:window-height="712"
+     id="namedview7"
+     showgrid="false"
+     inkscape:zoom="5.1430828"
+     inkscape:cx="33.690098"
+     inkscape:cy="14.889404"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg5"
+     inkscape:document-rotation="0" />
+  <g
+     id="Grupo_71"
+     data-name="Grupo 71"
+     transform="translate(-568.99998,-2544)">
+    <circle
+       id="Elipse_7"
+       data-name="Elipse 7"
+       cx="19"
+       cy="19"
+       r="19"
+       transform="rotate(180,303.5,1291)"
+       fill="#1894f2" />
+    <path
+       id="Trazado_27"
+       data-name="Trazado 27"
+       d="M 0,0 7.42,8.465 0,16.869"
+       transform="rotate(180,295.96,1285.6845)"
+       fill="none"
+       stroke="#ffffff"
+       stroke-width="2" />
+  </g>
+</svg>

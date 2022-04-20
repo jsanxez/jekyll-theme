@@ -1,1 +1,30 @@
-{{ content }}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blog sobre temas relacionados con las ciencias de la computacion y mas">
+    <title>{{ page.title }} - {{ page.siteName }}</title>
+    <link rel="stylesheet" href="{{ "/assets/images/resources/logo.svg" | relative_url }}" rel="shortcut icon">
+    <link rel="stylesheet" href="{{ "assets/css/styles.css" | relative_url }}">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;800&family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    {% include header.html %}
+    <div id="tabs" class="dflex-row nowrap flex-justify-center">
+        <a class="tabs__item rounded-2" href="#">Populares</a>
+        <a class="tabs__item  rounded-2 tabs__item--active" href="#">Recientes</a>
+        <a class="tabs__item rounded-2" href="#">Antiguos</a>
+    </div>
+
+    <div id="search" class="rounded-2 dflex-row nowrap flex-justify-between">
+        <input type="search" name="search" placeholder="Search..." aria-label="search">
+        <img src="{{ "/assets/images/resources/loupe.svg" | relative_url}}">
+    </div>
+    {{ content }}
+    {% include footer.html %}
+</body>
+</html>
+

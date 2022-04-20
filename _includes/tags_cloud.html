@@ -1,0 +1,17 @@
+<nav id="nav-cloud" class="dflex-row wrap flex-justify-center">
+  {% for tag in site.tags %}
+    <a class="nav-cloud__tag rounded-2" href="#">{{ tag[0] }}</a>
+    {% for post in tag[1] %}
+    <!-- {{ post | inspect }} -->
+      <!-- <li>
+        <a href="{{ post.url }}">{{ post.title }}</a>
+      </li> -->
+    {% endfor %}
+  {% endfor %}
+</nav>
+
+<div class="social header-smedia dflex-row wrap flex-justify-end">
+    <a href="#"><img src="{{ "/assets/images/resources/twitter.svg" | relative_url }}"></a>
+    <a href="#"><img src="{{ "/assets/images/resources/gitlab.svg" | relative_url }}"></a>
+    <a href="#"><img src="{{ "/assets/images/resources/github.svg" | relative_url }}"></a>
+</div>
