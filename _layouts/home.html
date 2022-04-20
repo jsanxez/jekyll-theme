@@ -9,11 +9,11 @@ layout: default
       <div class="card-header relative">
           <img src="/assets/images/{{ post.image }}" class="card__thumb" onerror="this.onerror=null; this.remove();">
           <a href="#" class="meta-info absolute left ml-1">
-              <!-- <img src="{{ "/assets/images/resources/user.svg" | relative_url }}"> -->
+              <img src="{{ "/assets/images/resources/user.svg" | relative_url }}">
               <span>{{ post.author }}</span>
           </a>
           <a href="#" class="meta-info absolute right mr-1">
-              <!-- <img src="{{ "/assets/images/resources/clock.svg" | relative_url }}"> -->
+              <img src="{{ "/assets/images/resources/clock.svg" | relative_url }}">
               {% assign dateStart = post.date | date: '%s' %}
               {% assign nowTimestamp = 'now' | date: '%s' %}
               {% assign diffSeconds = nowTimestamp | minus: dateStart %}
@@ -33,13 +33,13 @@ layout: default
       </div>
       <div class="card-footer dflex-row nowrap flex-justify-between">
           <div class="meta-info">
-              <!-- <img src="{{ "/assets/images/resources/tags.svg" | relative_url }}"> -->
+              <img src="{{ "/assets/images/resources/tags.svg" | relative_url }}">
                 {% for tag in post.tags %}
                 <a href="#">{{ tag }}</a>{% if tag != post.tags.last %}, {% endif %}
                 {% endfor %}
           </div>
           <a href="#" class="meta-info">
-              <!-- <img src="{{ "/assets/images/resources/comment.svg" | relative_url }}"> -->
+              <img src="{{ "/assets/images/resources/comment.svg" | relative_url }}">
               <span href="#">13</span>
           </a>
       </div>
